@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Routes, Route ,Link} from "react-router-dom";
 import Home from "./pages/Home";
 import Album from './pages/Album';
@@ -52,7 +53,7 @@ const contentStyle = {
 };
 const siderStyle = {
   textAlign: 'center',
-  lineHeight: '40px',
+  lineHeight: '39px',
 
   color: '#fff',
   backgroundColor: '#3ba0e9',
