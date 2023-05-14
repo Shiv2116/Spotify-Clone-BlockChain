@@ -53,7 +53,7 @@ const contentStyle = {
 };
 const siderStyle = {
   textAlign: 'center',
-  lineHeight: '40px',
+  lineHeight: '39px',
 
   color: '#fff',
   backgroundColor: '#3ba0e9',
