@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {useState} from 'react';
 import { Routes, Route ,Link} from "react-router-dom";
 import Home from "./pages/Home";
 import Album from './pages/Album';
@@ -7,12 +7,15 @@ import './App.css';
 import { Layout, Space } from 'antd';
 import Spotify from "./images/Spotify.png";
 import {SearchOutlined,DownCircleOutlined} from "@ant-design/icons"
+import Audio from './components/Audio';
 
 const {  Footer, Sider, Content } = Layout;
 
 
 const App = () => {
+  const [nftAlbum,setNftAlbum] = useState();
   return(
+  <Layout>
   <Layout>
         <Sider style={siderStyle}><img src={Spotify} alt= "logo" className="logo" />
        <div className='searchBar'>
@@ -32,11 +35,19 @@ const App = () => {
           </div>
         </div>
         </Sider>
-    <Content className='contentWindow' style={contentStyle}><Routes>
+    <Content className='contentWindow' style={contentStyle}>
+      <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/album" element={<Album />} />
+      <Route path="/album" element={<Album setNftAlbum={setNftAlbum}/>} />
       </Routes>
      </Content>
+    </Layout>
+    <Footer>
+      {nftAlbum &&
+      <Audio nftAlbum={nftAlbum}/>
+      }
+      
+    </Footer>
     </Layout>
     
   )

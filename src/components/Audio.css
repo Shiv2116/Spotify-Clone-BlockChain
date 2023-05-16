@@ -1,0 +1,78 @@
+.volume {
+    width:100px;
+  }
+  
+.soundDiv {
+    display: flex;
+    gap:15px;
+    font-size: 20px;
+    align-items:center;
+    width: 300px;
+    justify-content: end;
+  }
+
+.pauseplay {
+    font-size: 35px;
+    transition: transform 0.2s;
+}
+
+.pauseplay:hover {
+    transform: scale(1.1);
+}
+
+.forback {
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.forback:hover {
+    transform: scale(1.4);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5 rem;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.progress {
+    width:400px;
+}
+
+.progress .ant-slider-track {
+    background-color: #A7A7A7;
+}
+
+.progress .ant-slider-handle {
+    background-color: transparent;
+}
+
+.cover {
+    height: 80px;
+}
+
+.songTitle {
+    font-size: 16px;
+    color: white;
+}
+
+.songAlbum {
+    font-size: 12px;
+}
+.main-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
